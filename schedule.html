@@ -1,105 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Ritika Jain -->
 
 <head>
-    <link rel="stylesheet" href="stylesheets/yoga.css">
-    <!--the rel tag is for the relationship  between the linked code and this code.
-         In this case its a stylesheet which is named yoga.css.-->
-    <title> Path of Light Yoga Studio : Schedule</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The title tag names the page in the browser tab. -->
+    <title>Schedule · Path of Light Yoga Studio</title>
+    <meta name="description" content="Path of Light Yoga Studio: a college HTML and CSS exercise for a fictional yoga studio.">
+    <!-- The rel attribute describes how the linked file relates to this page; here it's the stylesheet. -->
+    <link rel="stylesheet" href="stylesheets/yoga.css">
 </head>
 
 <body>
-    <div id="header">
+    <div id="wrapper">
+        <!-- The header is the first thing visitors see, so the h1 is the largest heading. -->
         <header>
-            <h1>Path of Light Yoga Studio</h1>
+            <h1>Path of Light Yoga Studio
+                <span class="tagline">Hatha · Vinyasa · Restorative</span>
+            </h1>
         </header>
-        <nav>
-            <ul>
-                <li> <a href="index.html"> HOME</a> </li>
-                <li> <a href="classes.html">CLASSES </a> </li>
-                <li> <a href="schedule.html">SCHEDULE </a> </li>
-                <li><a href="contacts.html">CONTACT</a> </li>
-            </ul>
-        </nav>
-        <main>
-         
-             
-            <!--Yogalounge- https://unsplash.com/photos/98WE9hWWjiQ-->
-            <h2> Yoga Schedule</h2>
 
-            <!-- nav means navigation, this is the main toggle menu which can be looked 
-    through and will redirect to another segment and these redirected pages 
-    are linked through the a href tag. the nbsp tag refers to space between 
-    two elements without a break. -->
-            <p>Mats, blocks, and blankets provided. Please arrive 10
-                minutes before your class begins. Relax in our Serenity
-                Lounge before or after your class.</p>
+        <div class="layout">
+            <!-- nav holds the main menu; each a href links to another page of the site. -->
+            <nav aria-label="Main">
+                <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="classes.html">CLASSES</a></li>
+            <li><a href="schedule.html" aria-current="page">SCHEDULE</a></li>
+            <li><a href="contacts.html">CONTACT</a></li>
+                </ul>
+            </nav>
 
+            <!-- main holds the content that's unique to this page. -->
+            <main>
+                <h2>Yoga Schedule</h2>
+                <p>Mats, blocks and blankets provided. Please arrive 10 minutes before your class begins, and relax in
+                    our Serenity Lounge before or after your class.</p>
 
-                <div id="flow">
+                <!-- Each table has a caption, a header row (th) and one row (tr) per class. -->
+                <div class="tables">
                     <table>
-                        <caption>Monday - Friday</caption>
-                      <tr>
-                        <th>Time</th>
-                        <th>Class</th>
-                      </tr>
-                      <tr>
-                        <td>9:00am</td> 
-                        <td>Gentle Hatha Yoga</td>
-                      </tr>
-                      <tr>
-                        <td>10:30am</td> 
-                        <td>Vinyasa Yoga</td>
-                      </tr>
-                      <tr>
-                        <td>5:30pm</td> 
-                        <td>Restorative Yoga</td>
-                      </tr>
-                      <tr>
-                        <td>7:00pm</td> 
-                        <td>Gentle Hatha Yoga</td>
-                      </tr>
+                        <caption>Monday – Friday</caption>
+                        <thead>
+                            <tr><th scope="col">Time</th><th scope="col">Class</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>9:00am</td><td>Gentle Hatha Yoga</td></tr>
+                            <tr><td>10:30am</td><td>Vinyasa Yoga</td></tr>
+                            <tr><td>5:30pm</td><td>Restorative Yoga</td></tr>
+                            <tr><td>7:00pm</td><td>Gentle Hatha Yoga</td></tr>
+                        </tbody>
                     </table>
-                    
+
                     <table>
-                    <caption>Saturday & Sunday</caption>
-                    <tr>
-                        <th>Time</th>
-                        <th>Class</th>
-                    </tr>
-                    <tr>
-                        <td>10:30am</td> 
-                        <td>Gentle Hatha Yoga</td>
-                    </tr>
-                    <tr>
-                        <td>Noon</td>
-                        <td>Vinyasa Yoga</td>
-                    </tr>
-                    <tr>
-                        <td>1:30pm</td> 
-                        <td>Gentle Hatha Yoga</td>
-                    </tr>
-                    <tr>
-                        <td>3:00pm</td> 
-                        <td>Vinyasa Yoga</td>
-                    </tr>
-                    <tr>
-                        <td>5:30pm</td> 
-                        <td>Restorative Yoga</td>
-                    </tr>
+                        <caption>Saturday &amp; Sunday</caption>
+                        <thead>
+                            <tr><th scope="col">Time</th><th scope="col">Class</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>10:30am</td><td>Gentle Hatha Yoga</td></tr>
+                            <tr><td>Noon</td><td>Vinyasa Yoga</td></tr>
+                            <tr><td>1:30pm</td><td>Gentle Hatha Yoga</td></tr>
+                            <tr><td>3:00pm</td><td>Vinyasa Yoga</td></tr>
+                            <tr><td>5:30pm</td><td>Restorative Yoga</td></tr>
+                        </tbody>
                     </table>
-                  <div id="loungehero"></div>
-            <!-- the dl tag stands for description list. this has been used here to define different 
-    subheadings. the dd tag is for is for every description.  -->
-        </main>
+                </div>
+
+                <figure class="photo">
+                    <img src="images/yogalounge.jpg" width="1400" height="927" loading="lazy"
+                        alt="A bright lounge with a fireplace, leather chairs and large windows">
+                    <figcaption>The Serenity Lounge</figcaption>
+                </figure>
+            </main>
+        </div>
+
+        <!-- The footer sits at the bottom of every page. -->
         <footer>
-            Copyright &copy; Path of Light Yoga Studio <br>
-            <a href="mailto:xyz@gmail.com">xyz@gmail.com</a>
+            Copyright &copy; Path of Light Yoga Studio
+            <small>A college HTML &amp; CSS exercise for a fictional studio, based on a textbook case study.</small>
         </footer>
-        <!-- the footer tag is for the bottom of the document. the small tag refers to the size 
-        of the text. -->
     </div>
 </body>
 
