@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!-- Ritika Jain-->
+
+<head>
+    <link rel="stylesheet" href="stylesheets/yoga.css">
+    <!--the rel tag is for the relationship  between the linked code and this code.
+         In this case its a stylesheet which is named yoga.css.-->
+    <title> Path of Light Yoga Studio</title>
+    <!-- The title tsg helped me name my website -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <!DOCTYPE html><html lang="en"><head><title>Path of Light Yoga Studio :: Contact</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="yoga.css">
+    <script>
+    function validateForm() {
+        if (document.forms[0].myEmail.value == "" ) {
+            alert("Please enter an e-mail address.");
+            return false;} // end if return true;
+        } // endfunction validateForm
+        </script>
+        </head>
+
+<body>
+
+    <div class="bg"></div>
+    <div id="wrapper">
+        <div id="header">
+            <header>
+                <h1>Path of Light Yoga Studio</h1>
+            </header>
+            <!--This is the heading of the webpage, hence the header tag and its supposed 
+    to be the first thing you catch onto and reade, thats why the heading size is 
+    the largest. -->
+
+            <nav>
+                <ul>
+                    <li><a href="index.html"> HOME</a> </li>
+                    <li> <a href="classes.html">CLASSES</a> </li>
+                    <li> <a href="schedule.html">SCHEDULE </a> </li>
+                    <li><a href="contacts.html">CONTACT</a> </li>
+                </ul>
+            </nav>
+    <main>
+    <h2>Contact Path of Light Yoga Studio</h2>
+    <p>"Required information is marked with an asterisk (*)."
+    <form action="http://webdevbasics.net/scripts/yoga.php" method="post">
+                <label for="contactName">* Name:</label>
+                <input type="text" name="contactName" required="required">
+                
+                <label for="myEmail">* E-mail:</label>
+                <input type="email" name="myEmail" required="required">
+    
+                <label for="myComments">* Comments:</label>
+                <textarea rows="2" cols="20" name="myComments" 
+                required="required"></textarea>
+    
+                <input type="submit" value="Send Now" id="submission">
+            </form>
+        
+          </main>
+          <footer>
+              Copyright &copy; Path of Light Yoga Studio <br>
+              <a href="mailto:xyz@gmail.com">xyz@gmail.com</a>
+          </footer>
+        
+      </div>
+  </body>
+  
+  </html>
